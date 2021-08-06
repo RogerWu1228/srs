@@ -4185,7 +4185,7 @@ vector<string> SrsConfig::get_listens()
 
 string SrsConfig::get_pid_file()
 {
-    static string DEFAULT = "/Users/wushun/Desktop/srs/srs/trunk/objs/srs.pid";
+    static string DEFAULT = "/Users/wushun/Desktop/mySrs/srs/trunk/objs/srs.pid";
     
     SrsConfDirective* conf = root->get("pid");
     
