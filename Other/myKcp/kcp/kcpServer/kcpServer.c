@@ -95,7 +95,7 @@ int udpOutPut(const char *buf, int len, ikcpcb *kcp, void *user){
     if (n >= 0)       
    	{       
 		//会重复发送，因此牺牲带宽
-		printf("udpOutPut-send: 字节 =%d bytes   内容=[%s]\n", n ,buf+24);//24字节的KCP头部
+		printf("udpOutPut-send: len =%d bytes   data=%s\n", n ,buf+24);//24字节的KCP头部
         return n;
     } 
 	else 
@@ -122,7 +122,7 @@ int init(kcpObj *send)
 	send->addr.sin_addr.s_addr = htonl(INADDR_ANY);//INADDR_ANY
 	send->addr.sin_port = htons(send->port);
 		
-	printf("服务器socket: %d  port:%d\n",send->sockfd,send->port);
+	printf("server socket: %d  port:%d\n",send->sockfd,send->port);
 	
 	if(send->sockfd<0){
 		perror("socket error！");
@@ -156,7 +156,7 @@ void loop(kcpObj *send)
 		if(n < 0)//检测是否有UDP数据包: kcp头部+data
 			continue;
 		
-        printf("UDP接收到数据包  大小= %d   \n",n);
+        printf("UDP socket recv,  len= %d   \n",n);
 	
 		//预接收数据:调用ikcp_input将裸数据交给KCP，这些数据有可能是KCP控制报文，并不是我们要的数据。 
 		//kcp接收到下层协议UDP传进来的数据底层数据buffer转换成kcp的数据包格式
@@ -176,7 +176,7 @@ void loop(kcpObj *send)
 				break;
 		}
 
-		printf("数据交互  ip = %s  port = %d\n",inet_ntoa(send->CientAddr.sin_addr),ntohs(send->CientAddr.sin_port));
+		printf(" interaction:  ip = %s  port = %d\n",inet_ntoa(send->CientAddr.sin_addr),ntohs(send->CientAddr.sin_port));
 		
 		//发消息
 		if(strcmp(buf,"Conn") == 0)
@@ -191,10 +191,10 @@ void loop(kcpObj *send)
 			//应该是在kcp_update里面加封kcp头部数据
 			//ikcp_send把要发送的buffer分片成KCP的数据包格式，插入待发送队列中。
 			ret = ikcp_send(send->pkcp,temp,(int)sizeof(temp));			
-			printf("Server reply -> 内容[%s] 字节[%d] ret = %d\n",temp,(int)sizeof(temp),ret);
+			printf("Server reply -> data:%s  len:%d ret = %d\n",temp,(int)sizeof(temp),ret);
 			
 			number++;
-			printf("第[%d]次发\n",number);			
+			printf("the %d  time send\n",number);			
 		}	
 		
 		if(strcmp(buf,"Client:Hello!") == 0)
@@ -204,7 +204,7 @@ void loop(kcpObj *send)
 			//kcp收到交互包，则回复			
 			ikcp_send(send->pkcp, send->buff,sizeof(send->buff));				
 			number++;		
-			printf("第[%d]次发\n",number);
+			printf("the %d  time send\n",number);
 		}
 
 
@@ -216,7 +216,7 @@ int main(int argc,char *argv[])
 	printf("this is kcpServer\n");
 	if(argc <2 )
 	{
-		printf("请输入服务器端口号\n");
+		printf("please input ip and port\n");
 		return -1;
 	}
 	

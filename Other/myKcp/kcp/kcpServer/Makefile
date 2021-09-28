@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.16.4/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wushun/Desktop/kcp/kcpServer
+CMAKE_SOURCE_DIR = /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wushun/Desktop/kcp/kcpServer
+CMAKE_BINARY_DIR = /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wushun/Desktop/kcp/kcpServer/CMakeFiles /Users/wushun/Desktop/kcp/kcpServer/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wushun/Desktop/kcp/kcpServer/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

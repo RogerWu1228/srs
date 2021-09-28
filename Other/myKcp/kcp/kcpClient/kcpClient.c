@@ -84,20 +84,17 @@ void isleep(unsigned long millisecond)
 
 int udpOutPut(const char *buf, int len, ikcpcb *kcp, void *user){
    
- //  printf("使用udpOutPut发送数据\n");
+ //  printf("using udpOutPut send data\n");
    
     kcpObj *send = (kcpObj *)user;
 
 	//发送信息
     int n = sendto(send->sockfd, buf, len, 0,(struct sockaddr *) &send->addr,sizeof(struct sockaddr_in));//【】
-    if (n >= 0) 
-	{       
+    if (n >= 0) {       
 		//会重复发送，因此牺牲带宽
 		//printf("udpOutPut-send: 字节 =%d bytes   内容=[%s]\n", n ,buf+24);//24字节的KCP头部
         return n;
-    } 
-	else 
-	{
+    } else {
         printf("udpOutPut: %d bytes send, error\n", n);
         return -1;
     }
@@ -177,9 +174,9 @@ void loop(kcpObj *send)
 			printf("Data from Server-> %s\n",buf);	
 			//把要发送的buffer分片成KCP的数据包格式，插入待发送队列中。
 			ret = ikcp_send(send->pkcp, send->buff,sizeof(send->buff) );//strlen(send->buff)+1
-			printf("Client reply -> 内容[%s] 字节[%d]  ret = %d\n",send->buff,(int)sizeof(send->buff),ret);//发送成功的
+			printf("Client reply -> data:[%s] len:[%d]  ret = %d\n",send->buff,(int)sizeof(send->buff),ret);//发送成功的
 			number++;
-			printf("第[%d]次发\n",number);					
+			printf("the [%d] time to send\n",number);					
 		}
 		
 		//发消息
@@ -192,7 +189,7 @@ void loop(kcpObj *send)
 			//把要发送的buffer分片成KCP的数据包格式，插入待发送队列中。
 			ikcp_send(send->pkcp, send->buff, sizeof(send->buff));				
 			number++;		
-			printf("第[%d]次发\n",number);
+			printf("the [%d] time to send\n",number);
 		}	
 	}
 	
@@ -203,7 +200,7 @@ int main(int argc,char *argv[])
 	//printf("this is kcpClient,请输入服务器 ip地址和端口号：\n");
 	if(argc != 3)
 	{
-		printf("请输入服务器ip地址和端口号\n");
+		printf("please input ip and port \n");
 		return -1;
 	}
 	printf("this is kcpClient\n");
@@ -235,7 +232,7 @@ int main(int argc,char *argv[])
 	char temp[] = "Conn";//与服务器初次通信		
 	int	ret = ikcp_send(send.pkcp,temp,(int)sizeof(temp)); 
 	
-	printf("ikcp_send发送连接请求： [%s] len=%d ret = %d\n",temp,(int)sizeof(temp),ret);//发送成功的
+	printf("ikcp_send send  request: %s len=%d ret = %d\n",temp,(int)sizeof(temp),ret);//发送成功的
 		
 	loop(&send);//循环处理
 	

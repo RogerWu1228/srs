@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/wushun/Desktop/kcp/kcpClient/ikcp.h
+/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/ikcp.h
 stddef.h
 -
 stdlib.h
@@ -20,7 +20,7 @@ sys/inttypes.h
 stdint.h
 -
 
-/Users/wushun/Desktop/kcp/kcpClient/kcpClient.c
+/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/kcpClient.c
 sys/types.h
 -
 sys/socket.h
@@ -38,7 +38,7 @@ unistd.h
 stdlib.h
 -
 ikcp.h
-/Users/wushun/Desktop/kcp/kcpClient/ikcp.h
+/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/ikcp.h
 sys/time.h
 -
 sys/wait.h

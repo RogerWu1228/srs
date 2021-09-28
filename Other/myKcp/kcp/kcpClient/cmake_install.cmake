@@ -1,4 +1,4 @@
-# Install script for directory: /Users/wushun/Desktop/kcp/kcpClient
+# Install script for directory: /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/wushun/Desktop/kcp/kcpClient/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

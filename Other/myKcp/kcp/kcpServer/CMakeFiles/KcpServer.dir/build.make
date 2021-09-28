@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.16.4/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wushun/Desktop/kcp/kcpServer
+CMAKE_SOURCE_DIR = /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wushun/Desktop/kcp/kcpServer
+CMAKE_BINARY_DIR = /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer
 
 # Include any dependencies generated for this target.
 include CMakeFiles/KcpServer.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/KcpServer.dir/flags.make
 
 CMakeFiles/KcpServer.dir/ikcp.c.o: CMakeFiles/KcpServer.dir/flags.make
 CMakeFiles/KcpServer.dir/ikcp.c.o: ikcp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wushun/Desktop/kcp/kcpServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/KcpServer.dir/ikcp.c.o"
-	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/KcpServer.dir/ikcp.c.o   -c /Users/wushun/Desktop/kcp/kcpServer/ikcp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/KcpServer.dir/ikcp.c.o"
+	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/KcpServer.dir/ikcp.c.o   -c /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/ikcp.c
 
 CMakeFiles/KcpServer.dir/ikcp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/KcpServer.dir/ikcp.c.i"
-	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wushun/Desktop/kcp/kcpServer/ikcp.c > CMakeFiles/KcpServer.dir/ikcp.c.i
+	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/ikcp.c > CMakeFiles/KcpServer.dir/ikcp.c.i
 
 CMakeFiles/KcpServer.dir/ikcp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/KcpServer.dir/ikcp.c.s"
-	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wushun/Desktop/kcp/kcpServer/ikcp.c -o CMakeFiles/KcpServer.dir/ikcp.c.s
+	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/ikcp.c -o CMakeFiles/KcpServer.dir/ikcp.c.s
 
 CMakeFiles/KcpServer.dir/kcpServer.c.o: CMakeFiles/KcpServer.dir/flags.make
 CMakeFiles/KcpServer.dir/kcpServer.c.o: kcpServer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wushun/Desktop/kcp/kcpServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/KcpServer.dir/kcpServer.c.o"
-	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/KcpServer.dir/kcpServer.c.o   -c /Users/wushun/Desktop/kcp/kcpServer/kcpServer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/KcpServer.dir/kcpServer.c.o"
+	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/KcpServer.dir/kcpServer.c.o   -c /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/kcpServer.c
 
 CMakeFiles/KcpServer.dir/kcpServer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/KcpServer.dir/kcpServer.c.i"
-	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wushun/Desktop/kcp/kcpServer/kcpServer.c > CMakeFiles/KcpServer.dir/kcpServer.c.i
+	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/kcpServer.c > CMakeFiles/KcpServer.dir/kcpServer.c.i
 
 CMakeFiles/KcpServer.dir/kcpServer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/KcpServer.dir/kcpServer.c.s"
-	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wushun/Desktop/kcp/kcpServer/kcpServer.c -o CMakeFiles/KcpServer.dir/kcpServer.c.s
+	/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/kcpServer.c -o CMakeFiles/KcpServer.dir/kcpServer.c.s
 
 # Object files for target KcpServer
 KcpServer_OBJECTS = \
@@ -95,7 +95,7 @@ KcpServer: CMakeFiles/KcpServer.dir/ikcp.c.o
 KcpServer: CMakeFiles/KcpServer.dir/kcpServer.c.o
 KcpServer: CMakeFiles/KcpServer.dir/build.make
 KcpServer: CMakeFiles/KcpServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wushun/Desktop/kcp/kcpServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable KcpServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable KcpServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KcpServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/KcpServer.dir/clean:
 .PHONY : CMakeFiles/KcpServer.dir/clean
 
 CMakeFiles/KcpServer.dir/depend:
-	cd /Users/wushun/Desktop/kcp/kcpServer && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/wushun/Desktop/kcp/kcpServer /Users/wushun/Desktop/kcp/kcpServer /Users/wushun/Desktop/kcp/kcpServer /Users/wushun/Desktop/kcp/kcpServer /Users/wushun/Desktop/kcp/kcpServer/CMakeFiles/KcpServer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer /Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpServer/CMakeFiles/KcpServer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/KcpServer.dir/depend
 

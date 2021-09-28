@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/wushun/Desktop/kcp/kcpClient/ikcp.c" "/Users/wushun/Desktop/kcp/kcpClient/CMakeFiles/KcpClient.dir/ikcp.c.o"
-  "/Users/wushun/Desktop/kcp/kcpClient/kcpClient.c" "/Users/wushun/Desktop/kcp/kcpClient/CMakeFiles/KcpClient.dir/kcpClient.c.o"
+  "/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/ikcp.c" "/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/CMakeFiles/KcpClient.dir/ikcp.c.o"
+  "/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/kcpClient.c" "/Users/wushun/Desktop/mySrs/srs/Other/myKcp/kcp/kcpClient/CMakeFiles/KcpClient.dir/kcpClient.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 
