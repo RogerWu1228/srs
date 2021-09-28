@@ -1,0 +1,1 @@
+{"arguments":["/Users/wushun/Desktop/srs/srs/trunk/objs/srs","-c","./conf/rtmp.conf"]}

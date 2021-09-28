@@ -1,0 +1,21 @@
+
+
+ffmpeg -re -i ./doc/source.200kbps.768x320.flv  -vcodec copy -acodec copy  -f flv -y rtmp://172.29.180.62/live/livestream
+
+
+
+./objs/ffmepg/bin/ffmpeg -re  -i /Users/wushun/Desktop/测试音视频资源/longVideogop300.mp4 -vcodec copy -acodec copy -f flv -y rtmp://192.168.0.104/live/livestream
+
+
+
+编译: 
+
+1, cd trunk
+2, ./configure --osx && make
+
+3, ./objs/srs -c conf/srs.conf
+
+
+
+查看本机端口占用情况: 
+1, lsof -i:端口号 例如: lsof -i:8080

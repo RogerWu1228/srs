@@ -1,0 +1,3 @@
+/Users/wushun/Desktop/kcp/kcpServer/CMakeFiles/rebuild_cache.dir
+/Users/wushun/Desktop/kcp/kcpServer/CMakeFiles/edit_cache.dir
+/Users/wushun/Desktop/kcp/kcpServer/CMakeFiles/KcpServer.dir
