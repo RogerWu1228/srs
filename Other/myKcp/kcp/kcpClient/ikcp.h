@@ -152,9 +152,12 @@ typedef struct IQUEUEHEAD iqueue_head;
 	(ptr)->next = (ptr), (ptr)->prev = (ptr))
 
 #define IOFFSETOF(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER)
+                                //(size_t) &((IKCPSEG *)0)->node) 
 
 #define ICONTAINEROF(ptr, type, member) ( \
 		(type*)( ((char*)((type*)ptr)) - IOFFSETOF(type, member)) )
+		//iqueue_entry(kcp->snd_buf.next, IKCPSEG, node);
+		//(IKCPSEG*)( ((char*)((IKCPSEG*)ptr)) - IOFFSETOF(IKCPSEG, node)) )
 
 #define IQUEUE_ENTRY(ptr, type, member) ICONTAINEROF(ptr, type, member)
 
