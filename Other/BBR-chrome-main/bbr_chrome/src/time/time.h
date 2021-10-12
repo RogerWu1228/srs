@@ -16,12 +16,12 @@
 #endif
 
 // Forward declarations.
-// extern "C" {
-// struct _FILETIME;
-// struct mach_timespec;
-// struct timespec;
-// struct timeval;
-// }
+extern "C" {
+ struct _FILETIME;
+ struct mach_timespec;
+ struct timespec;
+ struct timeval;
+}
 
 namespace base {
 
