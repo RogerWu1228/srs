@@ -1,8 +1,0 @@
-.vs/
-build/
-quick_client_cmd/quick_client_cmd.vcxproj.user
-bin/
-quick_client/x64/
-quick_server/x64/
-quick_tunnel_server/x64/
-

@@ -1,1 +1,0 @@
-/Applications/xcode12.0.1/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/xcode12.0.1/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/KcpClient.dir/ikcp.c.o CMakeFiles/KcpClient.dir/kcpClient.c.o  -o KcpClient 
