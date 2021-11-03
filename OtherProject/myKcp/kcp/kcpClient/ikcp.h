@@ -290,6 +290,7 @@ struct IKCPCB
 	//rcv_nex  待接收消息序号。为了保证包的顺序，接收方会维护一个接收窗口，接收窗口有一个起始序号rcv_nxt（待接收消息序号）以及尾序号 rcv_nxt + rcv_wnd（接收窗口大小）；
 	IUINT32 snd_una, snd_nxt, rcv_nxt;
 
+    //ts_recent ts_lastack 这两个成员暂时没有使用!
 	//ssthresh 拥塞窗口阈值，以包为单位（TCP以字节为单位）；
 	IUINT32 ts_recent, ts_lastack, ssthresh;
 
@@ -302,7 +303,7 @@ struct IKCPCB
 	// snd_wnd 发送窗口大小
 	// rcv_wnd 接受窗口大小
 	// rmt_wnd 远端接受窗口大小
-	// cwnd 拥塞控制窗口
+	// cwnd 拥塞控制窗口大小
 	// probe 探查变量，IKCP_ASK_TELL表示告知远端窗口大小。IKCP_ASK_SEND表示请求远端告知窗口大小
 	IUINT32 snd_wnd, rcv_wnd, rmt_wnd, cwnd, probe;
 
