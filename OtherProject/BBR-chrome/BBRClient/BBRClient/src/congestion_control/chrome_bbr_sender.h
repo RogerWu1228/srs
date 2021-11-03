@@ -151,7 +151,7 @@ private:
                                           QuicRoundTripCount>;
 
 
-    const RttStats* rtt_stats_;
+  const RttStats* rtt_stats_;
   const QuicUnackedPacketMap* unacked_packets_;
   QuicConnectionStats* stats_;
 

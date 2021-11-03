@@ -103,7 +103,7 @@ private:
 
   const QuicClock* clock_;
   QuicConnectionStats* stats_;
-  size_t consecutive_rto_count_;
+  size_t consecutive_rto_count_; //连续的 rto 个数
 
   QuicPacketCount initial_congestion_window_;
   RttStats rtt_stats_;
